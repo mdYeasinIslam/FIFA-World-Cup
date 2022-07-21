@@ -1,9 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Merriweather', serif;
@@ -16,10 +10,6 @@ body {
 .banner-section {
     width: 870px;
     margin: 20px auto;
-    /* margin-left: 15%;
-    margin-right: 15%; */
-    /* display: grid; */
-    /* justify-content: center; */
     border-radius: 25px;
     background-color: black;
     margin-top: 30px;
@@ -55,6 +45,7 @@ body {
 
 .watch-button {
     background-image: linear-gradient(rgb(255, 6, 6), rgb(255, 9, 9));
+    border-radius: 5px;
     color: white;
     padding: 10px 25px 10px 25px;
     font-weight: 700;
@@ -67,17 +58,18 @@ body {
 
 
 /* button and blogs section */
+.button-blogs {
+    display: flex;
+    column-gap: 10px;
+
+}
+
 .blog-section {
     width: 870px;
     margin: 20px auto;
 }
 
-.button-blogs {
-    display: flex;
-    column-gap: 10px;
-    /* flex-direction: column;
-    align-items: center; */
-}
+
 
 /* button section bacground */
 .button-background {
@@ -117,6 +109,27 @@ body {
     column-gap: 10px;
 }
 
+/* About page */
+.upcoming-match {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.single-match {
+    background-image: #fff;
+    border: 0.5px solid lightgray;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.single-match img {
+    width: 100%;
+}
+
+/* end about ::-webkit-progress-value */
+
 .single-blogs img {
     width: 100%;
 }
@@ -147,6 +160,7 @@ body {
     width: 100%;
     height: 400px;
     padding-top: 60px;
+    margin-top: 80px;
     /* margin: 20px auto 0 auto;
     width: 870px;
      */
@@ -171,6 +185,11 @@ hr {
 
 .gap-adjust {
     padding: 0 30px;
+
+}
+
+.fa-brands {
+    padding-right: 50px;
 
 }
 
@@ -220,5 +239,40 @@ Media quary For MOBILE DEVICE
 
     .blog-section {
         width: 100%;
+    }
+
+    .gap-adjust {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*-------------------
+ Media query For Tablet 
+ --------------------*/
+@media screen and (min-width:687px) and (max-width:992px) {
+    .button-blogs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogs-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button-added {
+        display: flex;
+    }
+
+    .button-background {
+        width: 70%;
+        height: auto;
+        background: transparent;
+    }
+
+    .button-style {
+        width: 30%;
+        margin: 0 10px;
     }
 }
