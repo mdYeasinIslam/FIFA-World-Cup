@@ -1,0 +1,224 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+/* banner style */
+.banner-section {
+    width: 870px;
+    margin: 20px auto;
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    /* display: grid; */
+    /* justify-content: center; */
+    border-radius: 25px;
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+
+}
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px 0px 50px;
+
+}
+
+
+
+
+.banner-header {
+    font-size: 45px;
+}
+
+.banner-text {
+    color: white;
+
+}
+
+.banner-img {
+    margin-left: 10px;
+    margin-top: 80px;
+}
+
+
+.watch-button {
+    background-image: linear-gradient(rgb(255, 6, 6), rgb(255, 9, 9));
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-weight: 700;
+    margin: 15px 0;
+
+}
+
+/* end  banner section */
+
+
+
+/* button and blogs section */
+.blog-section {
+    width: 870px;
+    margin: 20px auto;
+}
+
+.button-blogs {
+    display: flex;
+    column-gap: 10px;
+    /* flex-direction: column;
+    align-items: center; */
+}
+
+/* button section bacground */
+.button-background {
+    width: 30%;
+    height: 250px;
+    background-color: black;
+    border-radius: 15px;
+
+}
+
+.button-added {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+}
+
+.button-style {
+    padding: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #FFF;
+}
+
+.extra-button {
+    color: #FFF;
+    background-image: linear-gradient(rgb(255, 6, 6), rgb(255, 9, 9));
+
+}
+
+/* blog area */
+.blogs-container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.single-blogs img {
+    width: 100%;
+}
+
+.single-blogs {
+    background-image: #fff;
+    border: 0.5px solid lightgray;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.single-blogs .content {
+    padding: 8px;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+
+
+
+/* footer section */
+.footer-section {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    padding-top: 60px;
+    /* margin: 20px auto 0 auto;
+    width: 870px;
+     */
+}
+
+.footer-head {
+    color: #FFF;
+    text-align: center;
+
+}
+
+hr {
+    margin: 2% 15%;
+    color: gray;
+}
+
+.footer-text {
+    color: lightgray;
+    text-align: center;
+    font-size: 15px;
+}
+
+.gap-adjust {
+    padding: 0 30px;
+
+}
+
+/* ----- 
+Media quary For MOBILE DEVICE
+----------- */
+@media screen and (max-width:688px) {
+
+    .banner-section {
+        width: 100%;
+        align-content: center;
+    }
+
+    .top-banner {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .button-background {
+        width: 90%;
+        background: transparent;
+
+    }
+
+    .blogs-container {
+        width: 99%;
+    }
+
+    .button-added {
+        padding: 0px;
+    }
+
+    .top-banner h1 {
+        font-size: 25px;
+    }
+
+    .button-blogs {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .blogs-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-section {
+        width: 100%;
+    }
+}
